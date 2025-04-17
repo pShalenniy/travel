@@ -1,0 +1,33 @@
+.mgl-map-wrapper {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .mapboxgl {
+    &-canvas {
+      &:focus {
+        outline: none;
+      }
+    }
+    &-ctrl-logo {
+      display: none;
+    }
+    &-marker {
+      &.active {
+        z-index: 1;
+      }
+      &.hover,
+      &:hover {
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.marker-circle {
+  width: 32px;
+  height: 32px;
+  border: 6px solid #fff;
+  background-color: $primary;
+  border-radius: 50%;
+}

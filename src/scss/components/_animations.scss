@@ -1,0 +1,47 @@
+.fade {
+  &-enter-active,
+  &-leave-active {
+    transition: all .3s;
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
+}
+
+.fade-bottom {
+  &-enter-active,
+  &-leave-active {
+    transition: all .3s;
+    transform: translateY(0);
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.slade-top {
+  &-enter-active,
+  &-leave-active {
+    transition: all 0.3s;
+    overflow: hidden;
+    height: 0;
+    min-height: 0;
+  }
+
+  &-enter-to,
+  &-leave {
+    min-height: 92px;
+  }
+
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+    height: 0;
+    min-height: 0;
+  }
+}

@@ -1,0 +1,118 @@
+.v-application .v-dialog {
+  box-shadow: 0 2px 30px 0 rgba(52, 52, 57, 0.2);
+  position: relative;
+  .btn-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: $text;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+  &__text {
+    color: $text;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 24px;
+    &-light {
+      color: $light;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  > .v-card {
+    background-color: #fff;
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: 24px;
+    > .v-card__title {
+      padding: 0;
+      margin-bottom: 24px;
+      .headline {
+        font-size: 21px !important;
+        line-height: 24px;
+        font-weight: 600;
+        font-family: "Nunito Sans", sans-serif !important;
+      }
+    }
+    > .v-card__text {
+      padding: 0;
+      margin-bottom: 24px;
+    }
+    > .v-card__actions {
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .v-btn.v-btn--block {
+        & + .v-btn--block {
+          margin: 16px 0 0;
+        }
+      }
+    }
+    > .dialog-tabs {
+      width: calc(100% + 48px);
+      border-bottom: 1px solid $border;
+      margin: -8px -24px 20px;
+      .v-tabs-bar {
+        height: 50px!important;
+        &__content {
+          justify-content: space-around;
+        }
+      }
+      .v-tab {
+        padding: 0 36px;
+        margin: 0!important;
+      }
+    }
+    .v-tabs-items {
+      .v-subheader {
+        padding: 0;
+        height: auto;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .v-input {
+    margin-bottom: 24px;
+    .v-input__slot {
+      margin: 0;
+    }
+
+    > .v-input__control > .v-input__slot {
+      min-height: 48px;
+    }
+
+    &.v-text-field--outlined {
+      .v-input__append-inner {
+        margin-top: 12px;
+        padding-left: 8px;
+      }
+
+      .v-input__prepend-inner {
+        padding-right: 8px;
+        margin-top: 12px;
+      }
+    }
+  }
+  .v-subheader {
+    height: auto;
+    padding: 0;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .col {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .v-btn.v-size--large {
+    font-size: 18px;
+    height: 56px;
+  }
+}

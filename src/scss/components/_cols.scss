@@ -1,0 +1,38 @@
+.v-application {
+  .col-450 {
+    max-width: 450px;
+    margin-right: 80px;
+    @include query-991 {
+      margin-right: 30px;
+      min-width: 1px;
+    }
+    @include query-767 {
+      width: 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0 auto 32px;
+      order: 2;
+    }
+  }
+  .col-420 {
+    max-width: 420px;
+    margin-right: 20px;
+  }
+  .col-320 {
+    width: 320px;
+    flex: 1 1 320px;
+    max-width: 320px;
+  }
+  @include query-660 {
+    .col-420 {
+      width: 420px;
+      flex: 0 0 420px;
+      max-width: 100%;
+      margin: 0 auto 32px;
+      order: 2;
+    }
+    .col-320 {
+      min-width: 100%;
+    }
+  }
+}

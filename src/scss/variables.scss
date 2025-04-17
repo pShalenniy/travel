@@ -1,0 +1,30 @@
+$primary: var(--v-primary-base);
+$secondary: #299FFF;
+$danger: #F6595D;
+$text: #343439;
+$light: #979797;
+$lightBg: #f6f6f6;
+$border: #dbdbdb;
+
+$header-height: 72px;
+$header-height-m: 64px;
+$header-height-m-details: 120px;
+$header-height-sm: 110px; // 320-374px
+
+$card-border-radius: 10px;
+
+$btn-sizes: (
+  'default': 40,
+  'large': 48
+);
+
+$material-light: (
+  'text': (
+    'primary': $text,
+    'secondary': $light,
+  ),
+);
+
+$grid-breakpoints: (
+  'sm': 768px
+);

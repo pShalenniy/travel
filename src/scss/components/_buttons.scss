@@ -1,0 +1,71 @@
+.v-btn {
+  letter-spacing: normal;
+  max-width: 100%;
+
+  .btn-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .v-btn__content {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  &.v-btn--outlined.border--text {
+    color: $text!important;
+    border-color: $border;
+  }
+
+  &.v-btn--outlined.text--text {
+    border-color: $border;
+  }
+
+  &.v-btn--outlined.light--text {
+    border-color: $border;
+  }
+
+  .v-chip {
+    position: absolute;
+    right: -10px;
+    top: -12px;
+  }
+
+  &.theme--light {
+    color: #fff;
+
+    &.lightBg {
+      color: $light;
+    }
+  }
+
+  &.theme--dark.v-btn--disabled.v-btn--outlined {
+    color: $border !important;
+  }
+
+  &.theme--dark.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+    background-color: rgba($text, 0.8) !important;
+  }
+}
+
+.v-chip.v-chip-label {
+  min-width: 34px;
+  height: 16px;
+  padding: 1px 6px 0;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.button-with-chip {
+  .v-chip {
+    opacity: 0;
+  }
+  &:hover {
+    .v-chip {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.content-page {
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  ul,
+  p,
+  .table {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

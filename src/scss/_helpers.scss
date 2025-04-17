@@ -1,0 +1,16 @@
+.text-ellipsis {
+  display: block;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.border-0 {
+  border: 0;
+}

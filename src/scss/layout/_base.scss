@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+  input,
+  button,
+  .v-application {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}
+
+.v-application {
+  a {
+    transition: $transition;
+
+    .v-icon {
+      transition: none;
+      color: currentColor;
+    }
+  }
+}
+
+hr {
+  border-color: $border;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+[class*="__price"] {
+  font-weight: 600;
+  strong {
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,9 @@
+.v-menu__content {
+  @media (max-width: 480px) {
+    max-width: calc(100% - 24px);
+  }
+}
+
+.v-tooltip__content {
+  max-width: 300px;
+}

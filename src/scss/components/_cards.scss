@@ -1,0 +1,72 @@
+.v-card {
+  text-align: left;
+  padding: 16px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid $border;
+  transition: all 0.2s;
+  color: $text;
+  box-shadow: none;
+  > *:first-child:not(.v-btn):not(.v-chip),
+  > .v-card__progress + *:not(.v-btn):not(.v-chip) {
+    border-radius: 0;
+  }
+  &.selected {
+    border-color: $text;
+  }
+  &.active {
+    border-color: $primary;
+  }
+  &.theme--light.v-sheet {
+    border-color: $border;
+  }
+  [class*="__heading"] {
+    display: flex;
+    align-items: center;
+    .v-btn {
+      background-color: rgba($text, 0.5);
+      &:not(:first-child) {
+        margin-left: 14px;
+      }
+    }
+  }
+}
+
+.success-card > .v-card  {
+  background-color: $primary;
+  color: #fff;
+  text-align: center;
+  padding: 80px 50px 100px;
+  > .v-icon {
+    color: currentColor;
+    font-size: 50px;
+    background-color: rgba(#fff, 0.3);
+    border-radius: 100% !important;
+    width: 104px;
+    height: 104px;
+    margin-bottom: 24px;
+  }
+  .v-card__title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+  .v-card__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+  }
+}
+
+.side-filter {
+  @include queryMin(661px) {
+    position: sticky;
+    top: 89px;
+    z-index: 1;
+  }
+}
